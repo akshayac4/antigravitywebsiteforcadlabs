@@ -118,7 +118,7 @@ export default function Home() {
         {/* Salesforce Services */}
         <div style={{ marginBottom: '4rem' }}>
           <div className="flex-header" style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
-            <Cloud size={32} color="#1A73E8" />
+            <Cloud size={32} color="var(--primary)" />
             <h3 className="text-2xl font-bold">Salesforce CRM Solutions</h3>
           </div>
           <div className="grid-cards" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
@@ -140,7 +140,7 @@ export default function Home() {
         {/* Odoo Services */}
         <div style={{ marginBottom: '2rem' }}>
           <div className="flex-header" style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
-            <Database size={32} color="#34A853" />
+            <Database size={32} color="var(--secondary)" />
             <h3 className="text-2xl font-bold">Odoo ERP Solutions</h3>
           </div>
           <div className="grid-cards" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
@@ -366,4 +366,3 @@ export default function Home() {
     </div>
   );
 }
-

@@ -22,6 +22,27 @@
   justify-content: space-between;
 }
 
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  display: block;
+  object-fit: contain;
+}
+
+.logo-image-full {
+  height: 52px;
+  width: auto;
+}
+
+.logo-image-symbol {
+  display: none;
+  height: 52px;
+  width: auto;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -161,6 +182,14 @@
   border-top-color: var(--border);
 }
 
+.footer-logo {
+  display: block;
+  height: 58px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
 .footer-content {
   display: flex;
   justify-content: space-between;
@@ -196,6 +225,15 @@
   
   .mobile-menu-toggle {
     display: block;
+  }
+
+  .logo-image-full {
+    display: none;
+  }
+
+  .logo-image-symbol {
+    display: block;
+    height: 48px;
   }
   
   /* Hero Section */

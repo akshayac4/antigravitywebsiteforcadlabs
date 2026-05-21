@@ -22,8 +22,9 @@ export default function Layout() {
       <nav className="navbar glass-panel">
         <div className="nav-content container">
           <div className="logo">
-            <Link to="/" onClick={closeMenu} style={{ display: 'flex', alignItems: 'center' }}>
-              <img src="/logo.png" alt="The Cad Labs Logo" style={{ height: '60px', mixBlendMode: 'multiply' }} />
+            <Link to="/" onClick={closeMenu} className="logo-link">
+              <img src="/logo.png" alt="Cad Labs Technology LLP" className="logo-image logo-image-full" />
+              <img src="/logo-symbol.png" alt="Cad Labs" className="logo-image logo-image-symbol" />
             </Link>
           </div>
           
@@ -63,7 +64,7 @@ export default function Layout() {
       <footer id="contact" className="footer border-t" style={{ marginTop: 'auto' }}>
         <div className="container footer-content">
           <div className="footer-brand">
-            <img src="/logo.png" alt="The Cad Labs Logo" style={{ height: '60px', mixBlendMode: 'multiply', marginBottom: '0.5rem' }} />
+            <img src="/logo.png" alt="Cad Labs Technology LLP" className="footer-logo" />
             <p className="text-muted mt-2">Elevating businesses through technology.</p>
           </div>
           <div className="footer-links">
