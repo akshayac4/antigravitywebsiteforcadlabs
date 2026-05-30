@@ -1,7 +1,6 @@
-import React from 'react';
 import { 
   ArrowRight, Cloud, Database, Car, CheckCircle, Code, Workflow,
-  Shield, Zap, Users, Building2, HeartPulse, ShoppingBag, TrendingUp,
+  Shield, Zap, Building2, HeartPulse, ShoppingBag, TrendingUp,
   MessageSquare, FileText, Award, Layers
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -11,7 +10,11 @@ export default function Home() {
     <div className="home-page">
       {/* Hero Section */}
       <header className="hero-section">
+        <div className="hero-brand-mark" aria-hidden="true">
+          <img src="/brand-icon.svg" alt="" />
+        </div>
         <div className="hero-content container">
+          <img className="hero-wordmark animate-fade-in" src="/brand-logo.png" alt="Cad Labs Technology LLP" />
           <h1 className="hero-title animate-fade-in">
             Transform Your Business with <br/>
             <span className="text-gradient">Next-Gen Cloud Solutions</span>

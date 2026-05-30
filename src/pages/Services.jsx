@@ -1,4 +1,3 @@
-import React from 'react';
 import { 
   Cloud, Database, CheckCircle, Code, Workflow, BarChart, 
   Layers, Settings, Zap, RefreshCw, PhoneCall, ArrowRight
@@ -18,7 +17,7 @@ export default function Services() {
       {/* Salesforce Detailed Section */}
       <section className="service-detail-section mb-16">
         <div className="flex-header" style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
-          <Cloud size={40} color="#00A1E0" />
+          <Cloud size={40} color="var(--primary)" />
           <h2 className="text-3xl font-bold">Salesforce CRM Services</h2>
         </div>
         
@@ -53,7 +52,7 @@ export default function Services() {
       {/* Odoo Detailed Section */}
       <section className="service-detail-section mb-16">
         <div className="flex-header" style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
-          <Database size={40} color="#714B67" />
+          <Database size={40} color="var(--secondary)" />
           <h2 className="text-3xl font-bold">Odoo ERP Services</h2>
         </div>
         

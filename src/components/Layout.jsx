@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import ScrollMotion from './ScrollMotion';
 import '../App.css';
 
 export default function Layout() {
@@ -18,13 +19,15 @@ export default function Layout() {
 
   return (
     <div className="app-container">
+      <ScrollMotion />
+
       {/* Navigation */}
       <nav className="navbar glass-panel">
         <div className="nav-content container">
           <div className="logo">
-            <Link to="/" onClick={closeMenu} className="logo-link">
-              <img src="/logo.png" alt="Cad Labs Technology LLP" className="logo-image logo-image-full" />
-              <img src="/logo-symbol.png" alt="Cad Labs" className="logo-image logo-image-symbol" />
+            <Link to="/" onClick={closeMenu} className="logo-link" aria-label="Cad Labs home">
+              <img className="logo-image logo-image-full" src="/brand-logo.png" alt="Cad Labs Technology LLP" />
+              <img className="logo-image logo-image-symbol" src="/brand-icon.svg" alt="" aria-hidden="true" />
             </Link>
           </div>
           
@@ -56,7 +59,7 @@ export default function Layout() {
       </nav>
 
       {/* Main Content Area */}
-      <main style={{ flex: 1, marginTop: '80px' }}>
+      <main style={{ flex: 1, marginTop: '88px' }}>
         <Outlet />
       </main>
 
@@ -64,7 +67,7 @@ export default function Layout() {
       <footer id="contact" className="footer border-t" style={{ marginTop: 'auto' }}>
         <div className="container footer-content">
           <div className="footer-brand">
-            <img src="/logo.png" alt="Cad Labs Technology LLP" className="footer-logo" />
+            <img className="footer-logo" src="/brand-logo.png" alt="Cad Labs Technology LLP" />
             <p className="text-muted mt-2">Elevating businesses through technology.</p>
           </div>
           <div className="footer-links">
