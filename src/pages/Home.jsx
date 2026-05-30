@@ -50,60 +50,78 @@ export default function Home() {
             <div className="icon-wrapper" style={{ color: 'var(--primary)', marginBottom: '1.25rem' }}>
               <Layers size={36} />
             </div>
-            <h3 className="text-xl font-bold mb-3">Platform-Agnostic Advisory</h3>
-            <p className="text-muted text-sm">
-              We focus on independent consulting. Whether Salesforce or Odoo fits your operational workflows and scaling objectives best, we recommend the optimal technology stack without vendor bias.
-            </p>
+            <div>
+              <h3 className="text-xl font-bold mb-3">Platform-Agnostic Advisory</h3>
+              <p className="text-muted text-sm">
+                <span className="mobile-short">Independent guidance on whether Salesforce or Odoo best fits your workflows, scale, and ROI goals.</span>
+                <span className="desktop-copy">We focus on independent consulting. Whether Salesforce or Odoo fits your operational workflows and scaling objectives best, we recommend the optimal technology stack without vendor bias.</span>
+              </p>
+            </div>
           </div>
 
           <div className="glass-panel animate-fade-in delay-100" style={{ padding: '2.5rem' }}>
             <div className="icon-wrapper" style={{ color: 'var(--secondary)', marginBottom: '1.25rem' }}>
               <TrendingUp size={36} />
             </div>
-            <h3 className="text-xl font-bold mb-3">Business-Driven Strategy</h3>
-            <p className="text-muted text-sm">
-              Our designs target tangible outcomes—minimizing operational redundancies, accelerating sales cycles, and optimizing customer touchpoints to achieve a clear, measurable return on investment.
-            </p>
+            <div>
+              <h3 className="text-xl font-bold mb-3">Business-Driven Strategy</h3>
+              <p className="text-muted text-sm">
+                <span className="mobile-short">Designs tied to cleaner operations, faster sales cycles, and better customer touchpoints.</span>
+                <span className="desktop-copy">Our designs target tangible outcomes—minimizing operational redundancies, accelerating sales cycles, and optimizing customer touchpoints to achieve a clear, measurable return on investment.</span>
+              </p>
+            </div>
           </div>
 
           <div className="glass-panel animate-fade-in delay-100" style={{ padding: '2.5rem' }}>
             <div className="icon-wrapper" style={{ color: 'var(--primary)', marginBottom: '1.25rem' }}>
               <Workflow size={36} />
             </div>
-            <h3 className="text-xl font-bold mb-3">Scalable Architecture</h3>
-            <p className="text-muted text-sm">
-              We design integration-ready databases and modular CRM/ERP models to support enterprise expansion, seamless API integrations, and ongoing digital transformation.
-            </p>
+            <div>
+              <h3 className="text-xl font-bold mb-3">Scalable Architecture</h3>
+              <p className="text-muted text-sm">
+                <span className="mobile-short">Integration-ready CRM and ERP models that can grow with your enterprise.</span>
+                <span className="desktop-copy">We design integration-ready databases and modular CRM/ERP models to support enterprise expansion, seamless API integrations, and ongoing digital transformation.</span>
+              </p>
+            </div>
           </div>
 
           <div className="glass-panel animate-fade-in delay-200" style={{ padding: '2.5rem' }}>
             <div className="icon-wrapper" style={{ color: 'var(--secondary)', marginBottom: '1.25rem' }}>
               <Shield size={36} />
             </div>
-            <h3 className="text-xl font-bold mb-3">Data-First Execution</h3>
-            <p className="text-muted text-sm">
-              We prioritize data validation, cleansing, and integrity. Your automation workflows, executive dashboards, and decision pipelines remain secure and reliable.
-            </p>
+            <div>
+              <h3 className="text-xl font-bold mb-3">Data-First Execution</h3>
+              <p className="text-muted text-sm">
+                <span className="mobile-short">Reliable data foundations for automation, dashboards, and secure decisions.</span>
+                <span className="desktop-copy">We prioritize data validation, cleansing, and integrity. Your automation workflows, executive dashboards, and decision pipelines remain secure and reliable.</span>
+              </p>
+            </div>
           </div>
 
           <div className="glass-panel animate-fade-in delay-200" style={{ padding: '2.5rem' }}>
             <div className="icon-wrapper" style={{ color: 'var(--primary)', marginBottom: '1.25rem' }}>
               <Zap size={36} />
             </div>
-            <h3 className="text-xl font-bold mb-3">Long-Term Support</h3>
-            <p className="text-muted text-sm">
-              Post-deployment, we support your systems with continuous optimization, proactive server fine-tuning, version upgrades, and dedicated SLA-backed troubleshooting.
-            </p>
+            <div>
+              <h3 className="text-xl font-bold mb-3">Long-Term Support</h3>
+              <p className="text-muted text-sm">
+                <span className="mobile-short">Optimization, upgrades, support, and server tuning after launch.</span>
+                <span className="desktop-copy">Post-deployment, we support your systems with continuous optimization, proactive server fine-tuning, version upgrades, and dedicated SLA-backed troubleshooting.</span>
+              </p>
+            </div>
           </div>
 
           <div className="glass-panel animate-fade-in delay-200" style={{ padding: '2.5rem' }}>
             <div className="icon-wrapper" style={{ color: 'var(--secondary)', marginBottom: '1.25rem' }}>
               <Award size={36} />
             </div>
-            <h3 className="text-xl font-bold mb-3">Certified Experts</h3>
-            <p className="text-muted text-sm">
-              Our certified Salesforce consultants and Odoo developers have extensive experience mapping enterprise processes into lean, highly automated system configurations.
-            </p>
+            <div>
+              <h3 className="text-xl font-bold mb-3">Certified Experts</h3>
+              <p className="text-muted text-sm">
+                <span className="mobile-short">Certified Salesforce and Odoo specialists who map enterprise process into lean systems.</span>
+                <span className="desktop-copy">Our certified Salesforce consultants and Odoo developers have extensive experience mapping enterprise processes into lean, highly automated system configurations.</span>
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -119,7 +137,7 @@ export default function Home() {
         </div>
 
         {/* Salesforce Services */}
-        <div style={{ marginBottom: '4rem' }}>
+        <div className="platform-block platform-block-salesforce" style={{ marginBottom: '4rem' }}>
           <div className="flex-header" style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
             <Cloud size={32} color="var(--primary)" />
             <h3 className="text-2xl font-bold">Salesforce CRM Solutions</h3>
@@ -141,7 +159,7 @@ export default function Home() {
         </div>
 
         {/* Odoo Services */}
-        <div style={{ marginBottom: '2rem' }}>
+        <div className="platform-block platform-block-odoo" style={{ marginBottom: '2rem' }}>
           <div className="flex-header" style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
             <Database size={32} color="var(--secondary)" />
             <h3 className="text-2xl font-bold">Odoo ERP Solutions</h3>
@@ -223,32 +241,40 @@ export default function Home() {
             <div style={{ color: 'var(--primary)', marginBottom: '1rem' }}>
               <MessageSquare size={28} />
             </div>
-            <h4 className="font-bold mb-2">SmartLead Integrator</h4>
-            <p className="text-muted text-xs">Seamlessly capture and route leads from web forms, chat, and social channels directly into Salesforce or Odoo pipelines.</p>
+            <div>
+              <h4 className="font-bold mb-2">SmartLead Integrator</h4>
+              <p className="text-muted text-xs">Seamlessly capture and route leads from web forms, chat, and social channels directly into Salesforce or Odoo pipelines.</p>
+            </div>
           </div>
 
           <div className="glass-panel" style={{ padding: '1.75rem' }}>
             <div style={{ color: 'var(--secondary)', marginBottom: '1rem' }}>
               <Shield size={28} />
             </div>
-            <h4 className="font-bold mb-2">Secure eSignature Suite</h4>
-            <p className="text-muted text-xs">Embedded electronic signing for contracts, quotes, and NDAs with audit‑ready compliance and real‑time status tracking.</p>
+            <div>
+              <h4 className="font-bold mb-2">Secure eSignature Suite</h4>
+              <p className="text-muted text-xs">Embedded electronic signing for contracts, quotes, and NDAs with audit‑ready compliance and real‑time status tracking.</p>
+            </div>
           </div>
 
           <div className="glass-panel" style={{ padding: '1.75rem' }}>
             <div style={{ color: 'var(--primary)', marginBottom: '1rem' }}>
               <FileText size={28} />
             </div>
-            <h4 className="font-bold mb-2">Instant PDF Composer</h4>
-            <p className="text-muted text-xs">Generate branded PDFs and reports on‑the‑fly using dynamic templates populated with live CRM/ERP data.</p>
+            <div>
+              <h4 className="font-bold mb-2">Instant PDF Composer</h4>
+              <p className="text-muted text-xs">Generate branded PDFs and reports on‑the‑fly using dynamic templates populated with live CRM/ERP data.</p>
+            </div>
           </div>
 
           <div className="glass-panel" style={{ padding: '1.75rem' }}>
             <div style={{ color: 'var(--secondary)', marginBottom: '1rem' }}>
               <Zap size={28} />
             </div>
-            <h4 className="font-bold mb-2">Mass Data Orchestrator</h4>
-            <p className="text-muted text-xs">Batch‑update thousands of records in Salesforce or Odoo with a single click, eliminating manual imports.</p>
+            <div>
+              <h4 className="font-bold mb-2">Mass Data Orchestrator</h4>
+              <p className="text-muted text-xs">Batch‑update thousands of records in Salesforce or Odoo with a single click, eliminating manual imports.</p>
+            </div>
           </div>
         </div>
       </section>

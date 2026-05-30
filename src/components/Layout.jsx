@@ -41,9 +41,15 @@ export default function Layout() {
           </div>
 
           {/* Mobile Menu Toggle */}
-          <div className="mobile-menu-toggle" onClick={toggleMenu}>
+          <button
+            className="mobile-menu-toggle"
+            onClick={toggleMenu}
+            aria-label={isMobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            aria-expanded={isMobileMenuOpen}
+            type="button"
+          >
             {isMobileMenuOpen ? <X size={28} className="text-main" /> : <Menu size={28} className="text-main" />}
-          </div>
+          </button>
         </div>
 
         {/* Mobile Dropdown */}
@@ -59,7 +65,7 @@ export default function Layout() {
       </nav>
 
       {/* Main Content Area */}
-      <main style={{ flex: 1, marginTop: '88px' }}>
+      <main className="site-main">
         <Outlet />
       </main>
 

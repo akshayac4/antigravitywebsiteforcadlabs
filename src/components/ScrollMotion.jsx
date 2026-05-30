@@ -30,13 +30,18 @@ export default function ScrollMotion() {
       const scrollY = window.scrollY || window.pageYOffset || 0;
       const maxScroll = Math.max(document.body.scrollHeight - window.innerHeight, 1);
       const progress = Math.min(scrollY / maxScroll, 1);
+      const isMobile = window.innerWidth <= 768;
+      const slow = isMobile ? 0.035 : 0.08;
+      const reverse = isMobile ? -0.025 : -0.05;
+      const orbA = isMobile ? 0.025 : 0.06;
+      const orbB = isMobile ? -0.02 : -0.04;
 
       root.style.setProperty('--scroll-progress', progress.toFixed(4));
-      root.style.setProperty('--scroll-slow', `${(scrollY * 0.08).toFixed(2)}px`);
-      root.style.setProperty('--scroll-reverse', `${(scrollY * -0.05).toFixed(2)}px`);
-      root.style.setProperty('--scroll-orb-a', `${(scrollY * 0.06).toFixed(2)}px`);
-      root.style.setProperty('--scroll-orb-b', `${(scrollY * -0.04).toFixed(2)}px`);
-      root.style.setProperty('--hero-rotate', `${(-8 + progress * 10).toFixed(2)}deg`);
+      root.style.setProperty('--scroll-slow', `${(scrollY * slow).toFixed(2)}px`);
+      root.style.setProperty('--scroll-reverse', `${(scrollY * reverse).toFixed(2)}px`);
+      root.style.setProperty('--scroll-orb-a', `${(scrollY * orbA).toFixed(2)}px`);
+      root.style.setProperty('--scroll-orb-b', `${(scrollY * orbB).toFixed(2)}px`);
+      root.style.setProperty('--hero-rotate', `${(-8 + progress * (isMobile ? 4 : 10)).toFixed(2)}deg`);
       frameId = 0;
     };
 
