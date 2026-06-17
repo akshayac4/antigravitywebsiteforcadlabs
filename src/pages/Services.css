@@ -1,0 +1,607 @@
+/* Premium Services Stylesheet */
+
+.services-redesign {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-main);
+  line-height: 1.6;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+/* Hero Intro */
+.services-hero {
+  text-align: center;
+  margin-bottom: 90px;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  background: rgba(59, 130, 246, 0.08);
+  color: var(--primary);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 100px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(59, 130, 246, 0.15);
+}
+
+.services-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.services-hero p {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 48px;
+}
+
+/* Trust Indicators */
+.trust-indicators {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 32px 0;
+  margin-top: 24px;
+}
+
+.trust-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.trust-val {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--text-main);
+  line-height: 1;
+  margin-bottom: 6px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.trust-label {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Section Header styling */
+.services-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 48px;
+  gap: 32px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.section-title-wrap {
+  max-width: 650px;
+}
+
+.section-label {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.salesforce-theme .section-label {
+  color: #00A1E0;
+}
+
+.odoo-theme .section-label {
+  color: #714B67;
+}
+
+.services-section-header h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.services-section-header p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+/* Section CTA buttons */
+.btn-section-cta {
+  min-height: 48px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
+}
+
+.salesforce-theme .btn-section-cta {
+  background: #00A1E0;
+  color: #fff;
+  border: 1px solid #0091cb;
+  box-shadow: 0 4px 14px rgba(0, 161, 224, 0.25);
+}
+
+.salesforce-theme .btn-section-cta:hover {
+  background: #008ebf;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 161, 224, 0.35);
+}
+
+.odoo-theme .btn-section-cta {
+  background: #714B67;
+  color: #fff;
+  border: 1px solid #5f3e56;
+  box-shadow: 0 4px 14px rgba(113, 75, 103, 0.25);
+}
+
+.odoo-theme .btn-section-cta:hover {
+  background: #5f3e56;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(113, 75, 103, 0.35);
+}
+
+/* Service Grids Layout */
+.services-layout-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 2fr;
+  gap: 32px;
+  margin-bottom: 48px;
+  align-items: stretch;
+}
+
+.supporting-services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* Cards Base */
+.service-card-premium {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card-premium:hover {
+  transform: translateY(-6px);
+  background: #ffffff;
+}
+
+.salesforce-theme .service-card-premium:hover {
+  border-color: rgba(0, 161, 224, 0.45);
+  box-shadow: 0 20px 40px rgba(0, 161, 224, 0.08);
+}
+
+.odoo-theme .service-card-premium:hover {
+  border-color: rgba(113, 75, 103, 0.45);
+  box-shadow: 0 20px 40px rgba(113, 75, 103, 0.08);
+}
+
+/* Featured Card Standout */
+.service-card-featured {
+  grid-row: span 2;
+  border-width: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.salesforce-theme .service-card-featured {
+  border-color: rgba(0, 161, 224, 0.25);
+  background: linear-gradient(180deg, rgba(0, 161, 224, 0.02) 0%, rgba(255, 255, 255, 0) 100%), #ffffff;
+}
+
+.odoo-theme .service-card-featured {
+  border-color: rgba(113, 75, 103, 0.25);
+  background: linear-gradient(180deg, rgba(113, 75, 103, 0.02) 0%, rgba(255, 255, 255, 0) 100%), #ffffff;
+}
+
+.salesforce-theme .service-card-featured:hover {
+  border-color: #00A1E0;
+  box-shadow: 0 24px 48px rgba(0, 161, 224, 0.12);
+}
+
+.odoo-theme .service-card-featured:hover {
+  border-color: #714B67;
+  box-shadow: 0 24px 48px rgba(113, 75, 103, 0.12);
+}
+
+/* Card Icons */
+.card-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.salesforce-theme .card-icon-wrap {
+  background: rgba(0, 161, 224, 0.08);
+  color: #00A1E0;
+}
+
+.odoo-theme .card-icon-wrap {
+  background: rgba(113, 75, 103, 0.08);
+  color: #714B67;
+}
+
+/* Featured card badge */
+.featured-badge {
+  align-self: flex-start;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.salesforce-theme .featured-badge {
+  background: rgba(0, 161, 224, 0.15);
+  color: #008ebf;
+}
+
+.odoo-theme .featured-badge {
+  background: rgba(113, 75, 103, 0.15);
+  color: #714B67;
+}
+
+/* Card details */
+.card-content h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.service-card-featured .card-content h3 {
+  font-size: 1.6rem;
+}
+
+.card-content p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.service-card-featured .card-content p {
+  font-size: 1.05rem;
+}
+
+/* Technology Tag Pills */
+.tech-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.tech-tag-pill {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 100px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+}
+
+/* Learn more link */
+.learn-more-link {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 0.92rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap 0.2s ease;
+  margin-top: auto;
+}
+
+.salesforce-theme .learn-more-link {
+  color: #00A1E0;
+}
+
+.odoo-theme .learn-more-link {
+  color: #714B67;
+}
+
+.service-card-premium:hover .learn-more-link {
+  gap: 10px;
+}
+
+/* Success snapshot banner */
+.success-snapshot-banner {
+  border-radius: 16px;
+  padding: 32px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 96px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.salesforce-theme .success-snapshot-banner {
+  background: linear-gradient(90deg, rgba(0, 161, 224, 0.05) 0%, rgba(255, 255, 255, 0.8) 100%);
+  border-left: 4px solid #00A1E0;
+}
+
+.odoo-theme .success-snapshot-banner {
+  background: linear-gradient(90deg, rgba(113, 75, 103, 0.05) 0%, rgba(255, 255, 255, 0.8) 100%);
+  border-left: 4px solid #714B67;
+}
+
+.snapshot-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.snapshot-icon {
+  margin-top: 4px;
+}
+
+.salesforce-theme .snapshot-icon {
+  color: #00A1E0;
+}
+
+.odoo-theme .snapshot-icon {
+  color: #714B67;
+}
+
+.snapshot-info h4 {
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  color: var(--text-muted);
+}
+
+.snapshot-info p {
+  font-size: 1.05rem;
+  color: var(--text-main);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.btn-snapshot-cta {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  color: var(--text-main);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-snapshot-cta:hover {
+  background: var(--surface);
+  transform: translateY(-1px);
+}
+
+/* Final Conversion CTA */
+.conversion-section {
+  border-radius: 24px;
+  padding: 80px 48px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 0%, rgba(139, 92, 246, 0.08), transparent 45rem), 
+              radial-gradient(circle at 10% 90%, rgba(59, 130, 246, 0.06), transparent 30rem), 
+              #ffffff;
+  border: 1px solid var(--border);
+  box-shadow: 0 24px 60px rgba(30, 30, 46, 0.05);
+}
+
+.conversion-section h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.conversion-section p {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto 36px auto;
+  line-height: 1.6;
+}
+
+.conversion-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn-conv-primary {
+  min-height: 48px;
+  padding: 12px 28px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: #ffffff;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+
+.btn-conv-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
+}
+
+.btn-conv-secondary {
+  min-height: 48px;
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  color: var(--text-main);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+
+.btn-conv-secondary:hover {
+  background: var(--surface);
+  border-color: rgba(var(--brand-blue-rgb), 0.3);
+  transform: translateY(-2px);
+}
+
+.service-card-wide {
+  grid-column: span 2;
+}
+
+/* Responsive Overrides */
+@media (max-width: 1024px) {
+  .services-layout-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .service-card-featured {
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-redesign {
+    padding: 48px 16px;
+  }
+  
+  .services-hero {
+    margin-bottom: 48px;
+  }
+  
+  .services-hero h1 {
+    font-size: clamp(2rem, 8vw, 2.5rem);
+  }
+  
+  .services-hero p {
+    font-size: 1.05rem;
+    margin-bottom: 32px;
+  }
+  
+  .trust-indicators {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 24px 0;
+  }
+  
+  .services-section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 32px;
+  }
+
+  .services-section-header h2 {
+    font-size: clamp(1.5rem, 6vw, 1.85rem);
+  }
+  
+  .btn-section-cta {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .supporting-services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .service-card-wide {
+    grid-column: span 1 !important;
+  }
+  
+  .success-snapshot-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 20px;
+    margin-bottom: 64px;
+  }
+  
+  .btn-snapshot-cta {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .conversion-section {
+    padding: 48px 24px;
+  }
+  
+  .conversion-section h2 {
+    font-size: clamp(1.8rem, 7vw, 2.2rem);
+  }
+  
+  .conversion-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .btn-conv-primary, .btn-conv-secondary {
+    width: 100%;
+  }
+}

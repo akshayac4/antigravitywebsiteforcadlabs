@@ -1,102 +1,320 @@
 import { 
-  Cloud, Database, CheckCircle, Code, Workflow, BarChart, 
-  Layers, Settings, Zap, RefreshCw, PhoneCall, ArrowRight
+  Cloud, Database, Code, Layers, Settings, CheckCircle, 
+  ArrowRight, Award, Briefcase, Users, ShieldCheck, Zap, Workflow, RefreshCw, TrendingUp
 } from 'lucide-react';
+import './Services.css';
 
 export default function Services() {
   return (
-    <div className="services-page container" style={{ paddingTop: '50px', paddingBottom: '100px' }}>
-      <div className="page-header text-center animate-fade-in" style={{ marginBottom: '4rem' }}>
-        <h1 className="text-4xl font-bold mb-4">Our Services</h1>
-        <p className="text-muted max-w-2xl mx-auto">
-          We provide comprehensive consulting, development, and implementation services 
-          for industry-leading CRM and ERP platforms.
-        </p>
+    <div className="services-page animate-fade-in">
+      <div className="services-redesign">
+        
+        {/* Hero Introduction Section */}
+        <header className="services-hero">
+          <div className="services-badge">Our Services</div>
+          <h1>Salesforce & Odoo Solutions That Drive Real Business Impact</h1>
+          <p>
+            From strategy to support, we help businesses streamline operations, 
+            improve customer experiences, and accelerate growth through Salesforce and Odoo.
+          </p>
+
+          {/* Trust Indicators */}
+          <div className="trust-indicators">
+            <div className="trust-item">
+              <span className="trust-val">8+</span>
+              <span className="trust-label">Years Experience</span>
+            </div>
+            <div className="trust-item">
+              <span className="trust-val">50+</span>
+              <span className="trust-label">Successful Projects</span>
+            </div>
+            <div className="trust-item">
+              <span className="trust-val">End-to-End</span>
+              <span className="trust-label">Delivery Guarantee</span>
+            </div>
+            <div className="trust-item">
+              <span className="trust-val">Client-First</span>
+              <span className="trust-label">Dedicated Solutions</span>
+            </div>
+          </div>
+        </header>
+
+        {/* Salesforce CRM Services Section */}
+        <section className="services-brand-section salesforce-theme">
+          <div className="services-section-header">
+            <div className="section-title-wrap">
+              <div className="section-label">Salesforce CRM Services</div>
+              <h2>Build stronger customer relationships and streamline operations with the world’s #1 CRM platform</h2>
+            </div>
+            <a href="#contact" className="btn-section-cta">
+              Book a Salesforce Consultation <ArrowRight size={18} />
+            </a>
+          </div>
+
+          <div className="services-layout-grid">
+            {/* Featured Service Card: Cloud Implementation */}
+            <div className="service-card-premium service-card-featured">
+              <div className="card-top">
+                <div className="featured-badge">Most Requested</div>
+                <div className="card-icon-wrap">
+                  <Cloud size={32} />
+                </div>
+                <div className="card-content">
+                  <h3>Cloud Implementation</h3>
+                  <p>
+                    End-to-end setup, data models, configuration, and user adoption plans. 
+                    We tailor deployment strategies that guarantee clean rollouts and high long-term utilization.
+                  </p>
+                  
+                  {/* Technology Tags */}
+                  <div className="tech-tags-list">
+                    <span className="tech-tag-pill">Sales Cloud</span>
+                    <span className="tech-tag-pill">Service Cloud</span>
+                    <span className="tech-tag-pill">Marketing Cloud</span>
+                    <span className="tech-tag-pill">Data Cloud</span>
+                    <span className="tech-tag-pill">CPQ</span>
+                  </div>
+                </div>
+              </div>
+              <a href="#contact" className="learn-more-link">
+                Learn More <ArrowRight size={16} />
+              </a>
+            </div>
+
+            {/* Supporting Salesforce Cards */}
+            <div className="supporting-services-grid">
+              
+              <div className="service-card-premium">
+                <div className="card-content">
+                  <div className="card-icon-wrap">
+                    <Users size={24} />
+                  </div>
+                  <h3>Salesforce Consulting</h3>
+                  <p>Strategic guidance on cloud selection, mapping business processes, and blueprinting roadmaps to optimize Salesforce ROI.</p>
+                </div>
+                <a href="#contact" className="learn-more-link">
+                  Learn More <ArrowRight size={16} />
+                </a>
+              </div>
+
+              <div className="service-card-premium">
+                <div className="card-content">
+                  <div className="card-icon-wrap">
+                    <Code size={24} />
+                  </div>
+                  <h3>Development & Customization</h3>
+                  <p>Tailoring your CRM with custom Apex code, Lightning Web Components (LWC), custom objects, validation rules, and automation flows.</p>
+                </div>
+                <a href="#contact" className="learn-more-link">
+                  Learn More <ArrowRight size={16} />
+                </a>
+              </div>
+
+              <div className="service-card-premium">
+                <div className="card-content">
+                  <div className="card-icon-wrap">
+                    <Layers size={24} />
+                  </div>
+                  <h3>AppExchange Development</h3>
+                  <p>Designing, engineering, and publishing custom packages on the AppExchange marketplace, ensuring strict security review compliance.</p>
+                </div>
+                <a href="#contact" className="learn-more-link">
+                  Learn More <ArrowRight size={16} />
+                </a>
+              </div>
+
+              <div className="service-card-premium">
+                <div className="card-content">
+                  <div className="card-icon-wrap">
+                    <Database size={24} />
+                  </div>
+                  <h3>Data Migration Services</h3>
+                  <p>Secure extraction, mapping, cleansing, validation, and migration of legacy database records to Salesforce with zero business downtime.</p>
+                </div>
+                <a href="#contact" className="learn-more-link">
+                  Learn More <ArrowRight size={16} />
+                </a>
+              </div>
+
+              <div className="service-card-premium service-card-wide">
+                <div className="card-content">
+                  <div className="card-icon-wrap">
+                    <Settings size={24} />
+                  </div>
+                  <h3>Support & Maintenance</h3>
+                  <p>Proactive system monitoring, security audits, release updates, custom enhancements, and SLA-backed administrative support.</p>
+                </div>
+                <a href="#contact" className="learn-more-link">
+                  Learn More <ArrowRight size={16} />
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          {/* Salesforce Success Snapshot Banner */}
+          <div className="success-snapshot-banner">
+            <div className="snapshot-content">
+              <div className="snapshot-icon">
+                <Award size={36} />
+              </div>
+              <div className="snapshot-info">
+                <h4>Success Snapshot</h4>
+                <p>“Helped a manufacturing company automate sales processes and improve visibility, resulting in significantly faster operations and better reporting.”</p>
+              </div>
+            </div>
+            <a href="#projects" className="btn-snapshot-cta">
+              View Case Study <ArrowRight size={16} />
+            </a>
+          </div>
+        </section>
+
+        {/* Odoo ERP Services Section */}
+        <section className="services-brand-section odoo-theme">
+          <div className="services-section-header">
+            <div className="section-title-wrap">
+              <div className="section-label">Odoo ERP Services</div>
+              <h2>Comprehensive Odoo solutions to automate operations, reduce costs, and scale business efficiency</h2>
+            </div>
+            <a href="#contact" className="btn-section-cta">
+              Talk to an Odoo Expert <ArrowRight size={18} />
+            </a>
+          </div>
+
+          <div className="services-layout-grid">
+            {/* Featured Service Card: Odoo Implementation */}
+            <div className="service-card-premium service-card-featured">
+              <div className="card-top">
+                <div className="featured-badge">Most Requested</div>
+                <div className="card-icon-wrap">
+                  <Workflow size={32} />
+                </div>
+                <div className="card-content">
+                  <h3>Odoo Implementation</h3>
+                  <p>
+                    Seamless mapping and setup of Odoo modules. We construct customized system 
+                    architectures that streamline operational tasks and enable clear visibility.
+                  </p>
+                  
+                  {/* Technology Tags */}
+                  <div className="tech-tags-list">
+                    <span className="tech-tag-pill">Sales</span>
+                    <span className="tech-tag-pill">CRM</span>
+                    <span className="tech-tag-pill">Inventory</span>
+                    <span className="tech-tag-pill">Purchase</span>
+                    <span className="tech-tag-pill">Manufacturing</span>
+                    <span className="tech-tag-pill">Accounting</span>
+                  </div>
+                </div>
+              </div>
+              <a href="#contact" className="learn-more-link">
+                Learn More <ArrowRight size={16} />
+              </a>
+            </div>
+
+            {/* Supporting Odoo Cards */}
+            <div className="supporting-services-grid">
+              
+              <div className="service-card-premium">
+                <div className="card-content">
+                  <div className="card-icon-wrap">
+                    <Code size={24} />
+                  </div>
+                  <h3>Module Customization</h3>
+                  <p>Custom Python development to build specialized Odoo apps and modify standard workflows to fit specific company procedures.</p>
+                </div>
+                <a href="#contact" className="learn-more-link">
+                  Learn More <ArrowRight size={16} />
+                </a>
+              </div>
+
+              <div className="service-card-premium">
+                <div className="card-content">
+                  <div className="card-icon-wrap">
+                    <Layers size={24} />
+                  </div>
+                  <h3>Integration Services</h3>
+                  <p>Connecting Odoo seamlessly with third-party systems, e-commerce stores, payment gateways, and shipping carrier APIs.</p>
+                </div>
+                <a href="#contact" className="learn-more-link">
+                  Learn More <ArrowRight size={16} />
+                </a>
+              </div>
+
+              <div className="service-card-premium">
+                <div className="card-content">
+                  <div className="card-icon-wrap">
+                    <Zap size={24} />
+                  </div>
+                  <h3>Theme Development</h3>
+                  <p>Designing beautiful, fully responsive website themes and optimizing backend Odoo admin UI/UX configurations.</p>
+                </div>
+                <a href="#contact" className="learn-more-link">
+                  Learn More <ArrowRight size={16} />
+                </a>
+              </div>
+
+              <div className="service-card-premium">
+                <div className="card-content">
+                  <div className="card-icon-wrap">
+                    <RefreshCw size={24} />
+                  </div>
+                  <h3>Upgrade & Migration</h3>
+                  <p>Upgrading legacy Odoo databases and custom scripts to the latest Odoo Enterprise version, preserving data integrity.</p>
+                </div>
+                <a href="#contact" className="learn-more-link">
+                  Learn More <ArrowRight size={16} />
+                </a>
+              </div>
+
+              <div className="service-card-premium service-card-wide">
+                <div className="card-content">
+                  <div className="card-icon-wrap">
+                    <TrendingUp size={24} />
+                  </div>
+                  <h3>Support & Tuning</h3>
+                  <p>Post-launch employee training, PostgreSQL server query tuning, troubleshooting, and continuous optimization support.</p>
+                </div>
+                <a href="#contact" className="learn-more-link">
+                  Learn More <ArrowRight size={16} />
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          {/* Odoo Success Snapshot Banner */}
+          <div className="success-snapshot-banner">
+            <div className="snapshot-content">
+              <div className="snapshot-icon">
+                <ShieldCheck size={36} />
+              </div>
+              <div className="snapshot-info">
+                <h4>Success Snapshot</h4>
+                <p>“Implemented Odoo for an auto-parts distributor, automating operations and reducing operational effort by nearly 50%.”</p>
+              </div>
+            </div>
+            <a href="#projects" className="btn-snapshot-cta">
+              View Case Study <ArrowRight size={16} />
+            </a>
+          </div>
+        </section>
+
+        {/* Final Conversion Section */}
+        <section className="conversion-section animate-fade-in">
+          <h2>Ready to Transform Your Business?</h2>
+          <p>Let’s discuss how Salesforce or Odoo can help your organization achieve its goals.</p>
+          <div className="conversion-buttons">
+            <a href="#contact" className="btn-conv-primary">
+              Schedule a Call
+            </a>
+            <a href="#contact" className="btn-conv-secondary">
+              Contact Us
+            </a>
+          </div>
+        </section>
+
       </div>
-
-      {/* Salesforce Detailed Section */}
-      <section className="service-detail-section mb-16">
-        <div className="flex-header" style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
-          <Cloud size={40} color="var(--primary)" />
-          <h2 className="text-3xl font-bold">Salesforce CRM Services</h2>
-        </div>
-        
-        <div className="grid-cards" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
-          <div className="glass-panel p-6" style={{ padding: '2rem' }}>
-            <h3 className="text-xl font-bold mb-2 flex items-center gap-2"><CheckCircle size={20} className="text-primary"/> Salesforce Consulting</h3>
-            <p className="text-muted text-sm">Strategic guidance on cloud selection, mapping business processes, and blueprinting roadmaps to optimize Salesforce ROI.</p>
-          </div>
-          <div className="glass-panel p-6" style={{ padding: '2rem' }}>
-            <h3 className="text-xl font-bold mb-2 flex items-center gap-2"><Code size={20} className="text-primary"/> Development & Customization</h3>
-            <p className="text-muted text-sm">Tailoring your CRM with custom Apex code, Lightning Web Components (LWC), custom objects, validation rules, and automation flows.</p>
-          </div>
-          <div className="glass-panel p-6" style={{ padding: '2rem' }}>
-            <h3 className="text-xl font-bold mb-2 flex items-center gap-2"><Workflow size={20} className="text-primary"/> Cloud Implementation</h3>
-            <p className="text-muted text-sm">End-to-end setup, data models, configuration, and adoption for Sales Cloud, Service Cloud, Marketing Cloud, and Revenue (CPQ) Cloud.</p>
-          </div>
-          <div className="glass-panel p-6" style={{ padding: '2rem' }}>
-            <h3 className="text-xl font-bold mb-2 flex items-center gap-2"><Layers size={20} className="text-primary"/> AppExchange Development</h3>
-            <p className="text-muted text-sm">Designing, engineering, and publishing custom packages on the AppExchange marketplace, ensuring strict security review compliance.</p>
-          </div>
-          <div className="glass-panel p-6" style={{ padding: '2rem' }}>
-            <h3 className="text-xl font-bold mb-2 flex items-center gap-2"><Database size={20} className="text-primary"/> Data Migration Services</h3>
-            <p className="text-muted text-sm">Secure extraction, mapping, cleansing, validation, and migration of legacy database records to Salesforce with zero business downtime.</p>
-          </div>
-          <div className="glass-panel p-6" style={{ padding: '2rem' }}>
-            <h3 className="text-xl font-bold mb-2 flex items-center gap-2"><Settings size={20} className="text-primary"/> Support & Maintenance</h3>
-            <p className="text-muted text-sm">Proactive system monitoring, security audits, release updates, custom enhancements, and SLA-backed administrative support.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Odoo Detailed Section */}
-      <section className="service-detail-section mb-16">
-        <div className="flex-header" style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
-          <Database size={40} color="var(--secondary)" />
-          <h2 className="text-3xl font-bold">Odoo ERP Services</h2>
-        </div>
-        
-        <div className="grid-cards" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
-          <div className="glass-panel p-6" style={{ padding: '2rem' }}>
-            <h3 className="text-xl font-bold mb-2 flex items-center gap-2"><CheckCircle size={20} className="text-primary"/> Odoo Implementation</h3>
-            <p className="text-muted text-sm">Seamless mapping and setup of Odoo modules including Sales, CRM, Inventory, Purchase, Manufacturing (MRP), and Accounting.</p>
-          </div>
-          <div className="glass-panel p-6" style={{ padding: '2rem' }}>
-            <h3 className="text-xl font-bold mb-2 flex items-center gap-2"><Code size={20} className="text-primary"/> Module Customization</h3>
-            <p className="text-muted text-sm">Custom Python development to build specialized Odoo apps and modify standard workflows to fit specific company procedures.</p>
-          </div>
-          <div className="glass-panel p-6" style={{ padding: '2rem' }}>
-            <h3 className="text-xl font-bold mb-2 flex items-center gap-2"><Workflow size={20} className="text-primary"/> Integration Services</h3>
-            <p className="text-muted text-sm">Connecting Odoo seamlessly with third-party systems, e-commerce stores, payment gateways, and shipping carrier APIs.</p>
-          </div>
-          <div className="glass-panel p-6" style={{ padding: '2rem' }}>
-            <h3 className="text-xl font-bold mb-2 flex items-center gap-2"><Zap size={20} className="text-primary"/> Theme Development</h3>
-            <p className="text-muted text-sm">Designing beautiful, fully responsive website themes and optimizing backend Odoo admin UI/UX configurations.</p>
-          </div>
-          <div className="glass-panel p-6" style={{ padding: '2rem' }}>
-            <h3 className="text-xl font-bold mb-2 flex items-center gap-2"><RefreshCw size={20} className="text-primary"/> Upgrade & Migration</h3>
-            <p className="text-muted text-sm">Upgrading legacy Odoo databases and custom scripts to the latest Odoo Enterprise version, preserving data integrity.</p>
-          </div>
-          <div className="glass-panel p-6" style={{ padding: '2rem' }}>
-            <h3 className="text-xl font-bold mb-2 flex items-center gap-2"><BarChart size={20} className="text-primary"/> Support & Tuning</h3>
-            <p className="text-muted text-sm">Post-launch employee training, PostgreSQL server query tuning, troubleshooting, and continuous optimization support.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Consultation Section */}
-      <section className="cta-section glass-panel text-center animate-fade-in" style={{ padding: '3.5rem 2rem', marginTop: '6rem' }}>
-        <div style={{ color: 'var(--primary)', marginBottom: '1.5rem', display: 'inline-block' }}>
-          <PhoneCall size={48} />
-        </div>
-        <h2 className="text-3xl font-bold mb-3">Ready to Accelerate Your Operations?</h2>
-        <p className="text-muted max-w-xl mx-auto mb-6">
-          Schedule a free diagnostic call with our certified cloud consultants. Let us map out a customized Salesforce or Odoo strategy that drives scalability and growth.
-        </p>
-        <a href="#contact" className="btn btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
-          Get Free Consultation <ArrowRight size={18} />
-        </a>
-      </section>
     </div>
   );
 }
