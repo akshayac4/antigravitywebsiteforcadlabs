@@ -5,6 +5,7 @@ import Services from './pages/Services';
 import Projects from './pages/Projects';
 import Blogs from './pages/Blogs';
 import BlogPost from './pages/BlogPost';
+import BusinessCard from './pages/BusinessCard';
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="blogs" element={<Blogs />} />
           <Route path="blogs/:id" element={<BlogPost />} />
         </Route>
+        <Route path="card/:slug" element={<BusinessCard />} />
       </Routes>
     </Router>
   );
