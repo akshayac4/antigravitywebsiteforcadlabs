@@ -245,6 +245,97 @@
   animation: fadeIn 0.3s ease-out;
 }
 
+/* Logo Container */
+.card-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.card-logo-img {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Entrance Animations */
+.card-animate-logo {
+  animation: cardFadeIn 400ms ease-out both;
+}
+
+.card-animate-avatar {
+  animation: cardSlideUpFade 500ms ease-out 150ms both;
+}
+
+.card-animate-text {
+  animation: cardSlideUpFadeSubtle 400ms ease-out 250ms both;
+}
+
+.card-animate-actions {
+  animation: cardSlideUpFadeSubtle 400ms ease-out 350ms both;
+}
+
+.card-animate-sticky-btn {
+  animation: cardScaleFade 400ms ease-out 500ms both;
+}
+
+/* Keyframes definitions */
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes cardSlideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cardSlideUpFadeSubtle {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cardScaleFade {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Accessibility: prefers-reduced-motion fallback */
+@media (prefers-reduced-motion: reduce) {
+  .card-animate-logo,
+  .card-animate-avatar,
+  .card-animate-text,
+  .card-animate-actions,
+  .card-animate-sticky-btn {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
 @media (max-width: 480px) {
   .card-page-wrapper {
     padding: 16px 12px 100px 12px;
@@ -255,3 +346,4 @@
     gap: 24px;
   }
 }
+

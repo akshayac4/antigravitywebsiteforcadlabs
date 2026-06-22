@@ -41,7 +41,7 @@ const CARDS_DATA = {
     website: 'https://www.thecadlabs.com',
     address: 'Mondeal Heights, B Wing, 6th Floor, Sarkhej - Gandhinagar Hwy, Near Novotel Hotel, Ahmedabad, Gujarat 380015',
     addressVcf: 'Mondeal Heights, B Wing, 6th Floor, Sarkhej-Gandhinagar Hwy, Near Novotel Hotel, Ahmedabad, Gujarat 380015, India',
-    profileImage: '/akshay_profile.png',
+    profileImage: '/akshay_profile.jpg',
     about: 'Cad Labs helps businesses streamline operations, improve customer engagement, and implement scalable CRM and business systems. We specialize in CRM consulting, process optimization, system implementation, and digital transformation.',
     socials: {
       linkedin: 'https://www.linkedin.com/company/thecadlabs/', // structure ready with placeholder/business links
@@ -133,24 +133,31 @@ export default function BusinessCard() {
 
   return (
     <div className="card-page-wrapper">
-      <div className="card-container glass-panel animate-fade-in">
+      <div className="card-container glass-panel">
         
+        {/* Brand Logo Header */}
+        <div className="card-logo-container card-animate-logo">
+          <img src="/brand-logo.png" alt="Cad Labs" className="card-logo-img" />
+        </div>
+
         {/* Profile Header */}
         <section className="card-profile-section">
-          <div className="card-avatar-container">
+          <div className="card-avatar-container card-animate-avatar">
             <img 
               src={card.profileImage} 
               alt={card.name} 
               className="card-avatar-image" 
             />
           </div>
-          <h1>{card.name}</h1>
-          <p className="card-designation">{card.designation}</p>
-          <p className="card-company">{card.company}</p>
+          <div className="card-animate-text">
+            <h1>{card.name}</h1>
+            <p className="card-designation">{card.designation}</p>
+            <p className="card-company">{card.company}</p>
+          </div>
         </section>
 
         {/* Quick Touch Actions */}
-        <section className="card-actions-grid">
+        <section className="card-actions-grid card-animate-actions">
           <a href={`tel:${card.phone.replace(/\s+/g, '')}`} className="card-action-btn" aria-label="Call">
             <Phone size={24} />
             <span>Call</span>
@@ -186,13 +193,13 @@ export default function BusinessCard() {
         </section>
 
         {/* About Business Section */}
-        <section className="card-about-section">
+        <section className="card-about-section card-animate-actions">
           <h2>About Cad Labs</h2>
           <p>{card.about}</p>
         </section>
 
         {/* Social Links List */}
-        <section className="card-social-links">
+        <section className="card-social-links card-animate-actions">
           {card.socials.linkedin && (
             <a href={card.socials.linkedin} target="_blank" rel="noreferrer" className="card-social-icon" aria-label="LinkedIn">
               <LinkedinIcon />
@@ -215,7 +222,7 @@ export default function BusinessCard() {
       </div>
 
       {/* Sticky Save Contact Button Footer */}
-      <div className="sticky-save-wrapper">
+      <div className="sticky-save-wrapper card-animate-sticky-btn">
         <button className="btn-save-contact" onClick={handleSaveContact}>
           <Download size={20} /> Save Contact
         </button>
